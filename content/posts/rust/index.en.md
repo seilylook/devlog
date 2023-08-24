@@ -1,7 +1,7 @@
 ---
 title: "Rust"
 date: 2023-08-24T14:14:21+09:00
-featuredImage: "/images/Rust-Logo.png"
+featuredImage: "/images/rust-logo.svg"
 tags: ["Development", "Language", "Web3.0"]
 categories: ["Development"]
 draft: true
@@ -231,3 +231,136 @@ Cargo를 사용하면 생기는 추가적인 이점은 어떠한 운영체제로
 최적화는 러스트 코드를 더 빠르게 만들어주지만, 최적화를 켜는 것은 프로그램을 컴파일하는덷 드는 시간을 길게 할 수 있다.
 
 이것이 바로 두 개의 서로 다른 프로파일이 있는 이유이다. 하나는 빠르게 그리고 자주 다시 빌드하기를 원하는 개발용, 다른 하나는 반복적으로 다시 빌드를 할 필요 없고 가능한 빠르게 실행되어 사용자들에게 제공할 최종 프포그램을 빌드하기 위한 용도이다.
+
+## 2. 개념
+
+### 2.1 변수와 가변성
+
+기본 변수는 불변성이다. 이것은 Rust가 제공하는 안전성과 손쉬운 동시성이라는 장점을 취할 수 있도록 코드를 작성하게끔 강제하는 요소 중 하나이다.
+
+변수가 불변성일 경우, 일단 값이 이름에 bound 되면 해당 값을 변경할 수 없다. 시험 삼아 `cargo new --bin variables`를 실행해서 새 프로젝트를 생성해본다. 그런 다음 VScode를 열어 다음과 같이 수정해준다.
+
+```
+fn main() {
+    let x = 5;
+    println!("The value of x is: {}", x);
+    x = 6;
+    println!("The value of x is: {}", x);
+}
+```
+
+저장하고 `cargo run`명령을 통해 실행시켜 보면, 다음과 같은 에러가 발생할 것이다.
+
+```shell
+error[E0384]: re-assignment of immutable variable `x`
+ --> src/main.rs:4:5
+  |
+2 |     let x = 5;
+  |         - first assignment to `x`
+3 |     println!("The value of x is: {}", x);
+4 |     x = 6;
+  |     ^^^^^ re-assignment of immutable variable
+
+```
+
+이 에러가 발생하는 이유는 `불변성 변수에 재할당`이고, 원인은 변수 `x`에 값을 새로 정의했기 때문이다.
+
+이전에 불변성으로 선언한 것의 값을 변경하고자 하는 시도를 하면 컴파일 타임의 에러를 얻게 되고 이로 인해 버그가 발생할 수 있기 때문에 중요하다. 만약 우리 코드의 일부는 값이 변경되지 않는다는 것을 가정하는데 다른 코드는 이와 다르게 값을 변경한다면, 전자에 해당하는 코드는 우리가 의도한 대로 수행되지 않을 수 있다.
+
+Rust에서는 컴파일러가 변경되지 않은 값에 대한 보증을 해주고, 실제로 이는 바뀌지 않는다. 이것이 의미하는 바는 코드를 작성하거나 분석할 시에 변수의 값이 어떻게 변경되는지 추적할 필요가 없이 때문에 코드의 안정성을 높여준다.
+
+하지만 때로는 변해야 되는 변수를 사용해야 될 때도 있기 때문에 `mut`을 추가하는 것을 통해 가변성 변수를 선언할 수 있다. 다음과 같이 사용할 수 있다.
+
+```
+fn main() {
+    let mut x = 5;
+    println!("The value of x is: {}", x);
+    x = 6;
+    println!("The value of x is: {}", x);
+}
+```
+
+위의 코드로 바꾸면 다음의 결과를 확인할 수 있다.
+
+```shell
+$ cargo run
+   Compiling variables v0.1.0 (file:///projects/variables)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.30 secs
+     Running `target/debug/variables`
+The value of x is: 5
+The value of x is: 6
+```
+
+가변성 변수를 사용할 좋은 경우는 다음과 같다. 예를 들어, 대규모 데이터 구조체를 다루는 경우 가변한 인스턴스를 사용하는 것이 새로 인스턴스를 할당하고 반한하는 것보다 빠를 수 있다.
+
+이는 반대로 데이터 규모가 작다면 새 인스턴스를 생성하고 함수적 프로그래밍 스타일로 작성하는 것이 더 합리적이라 할 수 있다.
+
+#### 변수와 상수 간의 차이점들
+
+변수의 값을 변경할 수 없는 사항이 다른 언어가 가진 프로그래밍 개념을 떠오르게 한다. `상수` 불변성 변수와 마찬가지로 상수 또한 이름으로 bound 된 후에는 값의 변경이 허용되지 않지만, 상수와 변수는 조금 다르다.
+
+첫째, 상수에 대해서는 `mut`을 사용하는 것이 허용되지 않는다. 상수는 기본 설정이 불변성이 아니라 불변성 그 자체이다.
+
+우리가 상수를 사용하고자 한다면 let 키워드 대신 const 키워드를 사용해야 하고, 값의 유형을 선언해야 한다.
+
+상수는 전체 영역을 포함해 어떤 영역에서도 선언될 수 있다. 이는 코드의 많은 부분에서 사용될 필요가 있는 값을 다루는데 유용하다. `ex) PUBLIC_BASE_URL=https://example.com`
+
+#### shadowing
+
+이전에 선언한 변수와 같은 이름의 새 변수를 선언할 수 있고, 새 변수는 이전 변수를 `shadows`하게 된다. 해당 변수명은 두 번째 변수의 값을 갖게 된다는 뜻이다. let 키워드를 사용해 다음처럼 반복해 같은 변수명으로 shadow 할 수 있다.
+
+```
+fn main() {
+    let x = 5;
+
+    let x = x + 1;
+
+    let x = x * 2;
+
+    println!("The value of x is: {}", x);
+}
+```
+
+이 프로그램은 처음 `x`에 값 5를 bind 한다. 이후 반복된 `let x = `구문으로 `x`를 shadow하고 원본 값에 `1`을 더해 `x`의 값은 `6`이 된다. 세번째 `let`문으로 또 `x`를 shadow하고, 이전 값에 `2`를 곱해 `x`의 최종값은 `12`가 된다. 프로그램을 실행하면 결과값이 다음과 같다.
+
+```
+$ cargo run
+   Compiling variables v0.1.0 (file:///projects/variables)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.31 secs
+     Running `target/debug/variables`
+The value of x is: 12
+```
+
+이와 같은 사용은 변수를 `mut`으로 선언하는 것과는 차이가 있다. 왜냐면 `let` 키워드를 사용하지 않고 변수에 새로 값을 대입하려고 하면 컴파일-시에 에러를 얻게 되기 때문이다. 우리가 몇 번 값을 변경할 수 있지만 그 이후에 변수는 불변성을 갖게 된다.
+
+또 다른 mut과 shadowing의 차이는 let 키워드를 다시 사용해 효과적으로 새 변수를 선언하고, 값의 유형을 변경할 수 있으면서도 동일 이름을 사용할 수 있다는 점 이다. 예를 들어, 공백 문자들을 입력받아 공백 문자의 길이를 보여주고자 할 때, 실제로 저장하고자 하는 것은 공백의 개수이다.
+
+```
+let spaces = "   ";
+let spaces = spaces.len();
+```
+
+이런 구조가 허용되는 이유는 첫 spaces 변수가 문자열 유형이고 두번째 spaces 변수는 첫 번째 것과 동일한 이름을 가진 새롭게 정의된 숫자 유형의 변수이기 때문이다.
+
+Shadowing은 space_str이나 space_num과 같이 대체된 이름을 사용하는 대신 간단히 spaces 이름을 사용할 수 있게 해준다.
+
+그러나 mut를 사용하려고 한다면
+
+```
+let mut spaces = "   ";
+spaces = spaces.len();
+```
+
+다음과 같은 에러가 발생한다.
+
+```shell
+error[E0308]: mismatched types
+ --> src/main.rs:3:14
+  |
+3 |     spaces = spaces.len();
+  |              ^^^^^^^^^^^^ expected &str, found usize
+  |
+  = note: expected type `&str`
+             found type `usize`
+
+```
