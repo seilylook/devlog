@@ -3,7 +3,7 @@ title: "Three.js"
 date: 2023-08-24T16:13:40+09:00
 featuredImage: "/images/threejs-logo.png"
 tags: ["Development", "Library", "3D"]
-categories: ["Development"]
+categories: ["Library"]
 draft: true
 ---
 
