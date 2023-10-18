@@ -54,6 +54,7 @@ draft: true
 - `Language`: Javscript, Typescript, Python, Dart, Rust
 - `Frontend`: React, Next.js, Svelte, Redux, Recoil, Saga, Flutter, Tailwindcss, styled-component
 - `Backend`: NestJS, Express
+- `Blockchain`: Solidity
 - `DB`: MySQL, MongoDB
 - `Infra`: Cloudflare, Vercel, Heroku
 
@@ -80,8 +81,10 @@ draft: true
 </center>
 
 {{<admonition note Demo>}}
-<img src="/images/filekit-main.png" />
-<img src="/images/filekit-category.png" />
+
+<img src="/images/filekit-main.png" alt="filekit-main">
+<img src="/images/filekit-category.png" alt="filekit-category">
+
 {{</admonition>}}
 
 #### 2. Youtube to MP3
@@ -96,8 +99,14 @@ draft: true
 
 {{<admonition note Demo>}}
 <img src="/images/youtube-main.png" />
-<img src="/images/youtube-upload.png" />
-<img src="/images/youtube-result.png" />
+
+<table>
+  <tr>
+    <td><img src="/images/youtube-upload.png" alt="youtube-upload"></td>
+    <td><img src="/images/youtube-result.png" alt="youtube-result"></td>
+  </tr>
+</table>
+
 {{</admonition>}}
 
 #### 3. Wikitoday
@@ -109,8 +118,28 @@ draft: true
 </center>
 
 {{<admonition note Demo>}}
+
 <img src="/images/wikitoday-category.png" />
-<img src="/images/wikitoday-sub.png" />
-<img src="/images/wikitoday-article1.png" />
-<img src="/images/wikitoday-article2.png" />
+
+<table>
+  <tr>
+    <td><img src="/images/wikitoday-sub.png" alt="wikitoday-main"></td>
+    <td><img src="/images/wikitoday-article1.png" alt="wikitoday-article-1"></td>
+    <td><img src="/images/wikitoday-article2.png" alt="wikitoday-article-2"></td>
+  </tr>
+</table>
+{{</admonition>}}
+
+#### 4. Krypto
+
+<center>
+  <a href="https://github.com/seilylook/krypt-web3.0">
+      <img src="https://github-readme-stats.vercel.app/api/pin/?username=seilylook&repo=krypt-web3.0" alt="Readme Card" style="width:450px;">
+  </a>
+</center>
+
+{{<admonition note Demo>}}
+
+<img src="/images/krypto-main.png" />
+
 {{</admonition>}}
