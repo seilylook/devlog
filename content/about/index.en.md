@@ -80,7 +80,7 @@ draft: true
   </a>
 </center>
 
-{{<admonition note Demo>}}
+{{<admonition success Demo>}}
 
 <img src="/images/filekit-main.png" alt="filekit-main">
 <img src="/images/filekit-category.png" alt="filekit-category">
@@ -97,7 +97,7 @@ draft: true
   </a>
 </center>
 
-{{<admonition note Demo>}}
+{{<admonition success Demo>}}
 <img src="/images/youtube-main.png" />
 
 <table>
@@ -117,7 +117,7 @@ draft: true
   </a>
 </center>
 
-{{<admonition note Demo>}}
+{{<admonition success Demo>}}
 
 <img src="/images/wikitoday-category.png" />
 
@@ -138,7 +138,7 @@ draft: true
   </a>
 </center>
 
-{{<admonition note Demo>}}
+{{<admonition success Demo>}}
 
 <img src="/images/krypto-main.png" />
 
