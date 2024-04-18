@@ -1,8 +1,8 @@
 ---
-title: "Korea Weather RSS"
+title: "Crawling & Scraping & Selenium"
 date: 2024-04-17T13:47:18+09:00
 featuredImage: "/images/project-image.jpeg"
-tags: ["Data Engineering", "Weather Data"]
+tags: ["Data Engineering", "Crawling", "Scraping", "Selenium"]
 categories: ["Data Engineering"]
 draft: true
 ---
@@ -4473,4 +4473,36 @@ print(f"Date: {now} | USD: {currency.string}")
 (venv)  {seilylook} 🚀 python3 market.py
 
 Date: 2024-04-17 17:15:49 | USD: 1,385.00
+```
+
+# Appendix Selenium
+
+Selenium? Web Browser Scraping
+
+## Motivation
+
+- 자바스크립트가 동적으로 만든 데이터 크롤링
+
+- 사이트의 다양한 HTML 요소에 클릭, 키보드 입력 등 이벤트 부여 가능
+
+- 평소 반복적으로 하고 있는 WEB SITE 업무 자동화 가능
+
+- 자동으로 로그인하기
+
+- 메일 보내기 자동화
+
+- 블로그 이웃 새글 자동 좋아요 누르기
+
+- 인스타그램 자동으로 좋아요, 댓글 작성하기
+
+## 설치
+
+```shell
+pip3 install selenium
+
+# Find your chrome version; chrome://version/
+# 현재 내 크롬 버전을 확인한다.
+
+# Download ChromeDriver; https://sites.google.com/chromium.org/driver/
+# 버전에 맞는 드라이버 설치
 ```
