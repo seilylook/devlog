@@ -1,7 +1,7 @@
 ---
 title: "Docker"
 date: 2024-04-09T18:07:56+09:00
-featuredImage: "/images/docker/featured-image/docker-logo.webp"
+featuredImage: "/images/featured-image/docker-logo.webp"
 tags: ["Docker", "Configuration"]
 categories: ["Development"]
 draft: true
