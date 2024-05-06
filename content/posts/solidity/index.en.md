@@ -1,7 +1,7 @@
 ---
 title: "Solidity"
 date: 2023-10-19T20:34:45+09:00
-featuredImage: "/images/solidity-image.png"
+featuredImage: "/images/solidity-logo-featured-image.png"
 tags: ["Development", "Technology", "Language", "Smart Contract", "Blockchain"]
 categories: ["Language"]
 draft: true

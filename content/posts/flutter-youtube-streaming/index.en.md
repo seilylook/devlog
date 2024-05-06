@@ -1,7 +1,7 @@
 ---
 title: "Flutter Youtube Streaming"
 date: 2023-12-18T18:32:43+09:00
-featuredImage: "/images/youtube-logo.jpeg"
+featuredImage: "/images/youtube-logo-featured-image.jpeg"
 tags: ["Development", "Cross Platform", "Flutter", "Dart"]
 categories: ["Project"]
 draft: true

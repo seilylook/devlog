@@ -1,7 +1,7 @@
 ---
 title: "Spark"
 date: 2024-04-11T14:51:35+09:00
-featuredImage: "/images/spark.png"
+featuredImage: "/images/spark-logo-featured-image.png"
 tags: ["Spark", "Data Engineering"]
 categories: ["Data Engineering"]
 draft: true
@@ -55,7 +55,7 @@ Spark 프레임워크에는 다음이 포함됩니다.
 
 - 그래프 처리를 위한 Spark GraphX
 
-<img src="/images/spark2.png" />
+<img src="/images/spark/spark2.png" />
 
 ## Spark Core
 

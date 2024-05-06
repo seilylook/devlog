@@ -1,7 +1,7 @@
 ---
 title: "Web3.0"
 date: 2023-10-11T17:37:16+09:00
-featuredImage: "/images/web3.0-image.jpg"
+featuredImage: "/images/web3.0-featured-image.jpg"
 tags: ["Development", "Technology", "Decentralize", "Web 3.0"]
 categories: ["Technology"]
 draft: true

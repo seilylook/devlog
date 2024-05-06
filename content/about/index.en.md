@@ -13,10 +13,10 @@ draft: true
 ---
 
 <div align="center">
-    <img src="/images/profile.png" width=200> <br/>
+    <img src="/images/profile-featured-image.png" width=200> <br/>
     <b>Se Hyeon Kim</b>
     <br/>
-    <a href="https://github.com/seilylook"><img src="/images/github-mark.png" width=20 align="center"></a>
+    <a href="https://github.com/seilylook"><img src="/images/github-logo-featured-image.png" width=20 align="center"></a>
 </div>
 
 <br/>
@@ -51,12 +51,11 @@ draft: true
         <lottie-player src="https://lottie.host/ad4c866a-535c-4dab-980a-56f43f1f1f28/ZnvWk1OlwU.json" background="transparent"  speed="1"  style="width:300px;height:300px" autoplay ></lottie-player>
 </center>
 
-- `Language`: Javscript, Typescript, Python, Dart, Rust
-- `Frontend`: React, Next.js, Svelte, Redux, Recoil, Saga, Flutter, Tailwindcss, styled-component
+- `Language`: Python, Scala, Javascript, Dart
+- `Frontend`: React.js, Svelte, Flutter
 - `Backend`: NestJS, Express
-- `Blockchain`: Solidity
-- `DB`: MySQL, MongoDB
-- `Infra`: Cloudflare, Vercel, Heroku
+- `Big Data`: Spark, Kafka
+- `DevOps`: Kubernetes
 
 <br/>
 
@@ -82,8 +81,8 @@ draft: true
 
 {{<admonition success Demo>}}
 
-<img src="/images/filekit-main.png" alt="filekit-main">
-<img src="/images/filekit-category.png" alt="filekit-category">
+<img src="/images/projects/filekit/filekit-main.png" alt="filekit-main">
+<img src="/images/projects/filekit/filekit-category.png" alt="filekit-category">
 
 {{</admonition>}}
 
@@ -98,12 +97,12 @@ draft: true
 </center>
 
 {{<admonition success Demo>}}
-<img src="/images/youtube-main.png" />
+<img src="/images/projects/youtubetomp3/youtube-main.png" />
 
 <table>
   <tr>
-    <td><img src="/images/youtube-upload.png" alt="youtube-upload"></td>
-    <td><img src="/images/youtube-result.png" alt="youtube-result"></td>
+    <td><img src="/images/projects/youtubetomp3/youtube-upload.png" alt="youtube-upload"></td>
+    <td><img src="/images/projects/youtubetomp3/youtube-result.png" alt="youtube-result"></td>
   </tr>
 </table>
 
@@ -119,13 +118,13 @@ draft: true
 
 {{<admonition success Demo>}}
 
-<img src="/images/wikitoday-category.png" />
+<img src="/images/projects/wikitoday/wikitoday-category.png" />
 
 <table>
   <tr>
-    <td><img src="/images/wikitoday-sub.png" alt="wikitoday-main"></td>
-    <td><img src="/images/wikitoday-article1.png" alt="wikitoday-article-1"></td>
-    <td><img src="/images/wikitoday-article2.png" alt="wikitoday-article-2"></td>
+    <td><img src="/images/projects/wikitoday/wikitoday-sub.png" alt="wikitoday-main"></td>
+    <td><img src="/images/projects/wikitoday/wikitoday-article1.png" alt="wikitoday-article-1"></td>
+    <td><img src="/images/projects/wikitoday/wikitoday-article2.png" alt="wikitoday-article-2"></td>
   </tr>
 </table>
 {{</admonition>}}
@@ -140,7 +139,7 @@ draft: true
 
 {{<admonition success Demo>}}
 
-<img src="/images/krypto-main.png" />
+<img src="/images/projects/krypto/krypto-main.png" />
 
 {{</admonition>}}
 
@@ -156,8 +155,8 @@ draft: true
 
 <table>
   <tr>
-    <td><img src="/images/image-picker-result1.png" /></td>
-    <td><img src="/images/image-picker-result2.png" /></td>
+    <td><img src="/images/projects/flutter-image-picker/image-picker-result1.png" /></td>
+    <td><img src="/images/projects/flutter-image-picker/image-picker-result2.png" /></td>
   </tr>
 </table>
 
@@ -175,7 +174,7 @@ draft: true
 
 <table>
   <tr>
-    <td><img src="/images/seTube-result.png" /></td>
+    <td><img src="/images/projects/seTube/seTube-result.png" /></td>
   </tr>
 </table>
 
@@ -191,7 +190,7 @@ draft: true
 
 {{<admonition success Demo>}}
 
-<img src="/images/flutter-scheduler-1.png" />
+<img src="/images/projects/flutter-scheduler/flutter-scheduler-1.png" />
 
 <table>
   <tr>
@@ -214,14 +213,14 @@ draft: true
 
 <table>
   <tr>
-    <td><img src="/images/flutter-twitter-1.png"></td>
-    <td><img src="/images/flutter-twitter-2.png"></td>
-    <td><img src="/images/flutter-twitter-3.png"></td>
+    <td><img src="/images/projects/flutter-twitter/flutter-twitter-1.png"></td>
+    <td><img src="/images/projects/flutter-twitter/flutter-twitter-2.png"></td>
+    <td><img src="/images/projects/flutter-twitter/flutter-twitter-3.png"></td>
   </tr>
   <tr>
-    <td><img src="/images/flutter-twitter-4.png"></td>
-    <td><img src="/images/flutter-twitter-5.png"></td>
-    <td><img src="/images/flutter-twitter-6.png"></td>
+    <td><img src="/images/projects/flutter-twitter/flutter-twitter-4.png"></td>
+    <td><img src="/images/projects/flutter-twitter/flutter-twitter-5.png"></td>
+    <td><img src="/images/projects/flutter-twitter/flutter-twitter-6.png"></td>
   </tr>
 </table>
 
@@ -239,7 +238,7 @@ draft: true
 
 <table>
   <tr>
-    <td><img src="/images/flutter-voice-assistant.png"></td>
+    <td><img src="/images/projects/flutter-voice-assitant/flutter-voice-assistant.png"></td>
   </tr>
 </table>
 
@@ -247,24 +246,18 @@ draft: true
 
 ### 10. TuneFun
 
-<!-- <center>
-  <a href="https://github.com/seilylook/flutter-twitter.git">
-      <img src="https://github-readme-stats.vercel.app/api/pin/?username=seilylook&repo=flutter-twitter" alt="Readme Card" style="width:450px;">
-  </a>
-</center> -->
-
 {{<admonition success Demo>}}
 
 <table>
   <tr>
-    <td><img src="/images/TuneFun-1.png"></td>
-    <td><img src="/images/TuneFun-2.png"></td>
-    <td><img src="/images/TuneFun-3.png"></td>
+    <td><img src="/images/projects/tunefun/TuneFun-1.png"></td>
+    <td><img src="/images/projects/tunefun/TuneFun-2.png"></td>
+    <td><img src="/images/projects/tunefun/TuneFun-3.png"></td>
   </tr>
   <tr>
-    <td><img src="/images/TuneFun-4.png"></td>
-    <td><img src="/images/TuneFun-5.png"></td>
-    <td><img src="/images/TuneFun-6.png"></td>
+    <td><img src="/images/projects/tunefun/TuneFun-4.png"></td>
+    <td><img src="/images/projects/tunefun/TuneFun-5.png"></td>
+    <td><img src="/images/projects/tunefun/TuneFun-6.png"></td>
   </tr>
 </table>
 

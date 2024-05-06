@@ -9,7 +9,7 @@ draft: true
 
 # URL Format
 
-<img src="/images/URI_syntax_diagram.svg" />
+<img src="/images/data-acquisition/URI_syntax_diagram.svg" />
 
 Ex)
 

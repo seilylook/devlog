@@ -1,7 +1,7 @@
 ---
 title: "Scrum"
 date: 2024-03-15T15:24:36+09:00
-featuredImage: "/images/scrum-image.webp"
+featuredImage: "/images/scrum-featured-image.webp"
 tags: ["Scrum", "Development Methology"]
 categories: ["Study"]
 draft: true

@@ -1,7 +1,7 @@
 ---
 title: "Hugo 개발 블로그 개설"
 date: 2023-08-22T17:04:46+09:00
-featuredImage: "/images/hugo-logo.png"
+featuredImage: "/images/hugo-logo-featued-image.png"
 tags: ["Development", "vlog"]
 categories: ["Project"]
 draft: true

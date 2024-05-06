@@ -1,7 +1,7 @@
 ---
 title: "Flutter Firebase"
 date: 2023-12-26T13:18:15+09:00
-featuredImage: "/images/flutter-firebase.jpeg"
+featuredImage: "/images/flutter-firebase-featured-image.jpeg"
 tags: ["Development", "Cross Platform", "Flutter", "Dart"]
 categories: ["Project"]
 draft: true
@@ -115,7 +115,7 @@ export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 #### 파이어베이스 console로 가서 프로젝트를 생성해준다.
 
-<img src="/images/firestore-connection-1.png" />
+<img src="/images/firestore/firestore-connection-1.png" />
 
 #### 프로젝트 연결
 
@@ -137,9 +137,9 @@ Firebase console로 이동해서
 
 3. 규칙을 `allow read, write: if true;`로 바꿔준다.
 
-<img src="/images/firestore-connection-4.png" />
+<img src="/images/firestore/firestore-connection-4.png" />
 
-<img src="/images/firestore-connection-3.png" />
+<img src="/images/firestore/firestore-connection-3.png" />
 
 ## 구현
 
@@ -211,7 +211,7 @@ widgets/schedule_bottom.dart 파일에 있는 ScheduleBottomSheet 위젯의 `onS
   }
 ```
 
-<img src="/images/firestore-connection-2.png" />
+<img src="/images/firestore/firestore-connection-2.png" />
 
 ### 일정 데이터 받아오기
 

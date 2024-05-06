@@ -1,7 +1,7 @@
 ---
 title: "DataWarehouse"
 date: 2024-04-11T16:39:24+09:00
-featuredImage: "/images/data-warehouse.webp"
+featuredImage: "/images/data-warehouse-featured-image.webp"
 tags: ["Data Warehouse", "Data Engineering"]
 categories: ["Data Engineering"]
 draft: true
@@ -41,11 +41,11 @@ draft: true
 
 데이터의 볼륨 및 다양성이 증가함에 따라 데이터베이스, 데이터 레이크 및 데이터 웨어하우스에서 데이터 관련 작업 시 하나 이상의 공통 패턴을 따르면 다음과 같은 이점이 있습니다.
 
-<img src="/images/data-warehouse2.png" />
+<img src="/images/data-warehouse/data-warehouse2.png" />
 
 이미지(위): 데이터베이스 또는 데이터레이크에서 데이터를 연결하고 데이터를 준비하며 선택한 데이터를 데이터 웨어하우스로 이동한 후 보고를 수행합니다.
 
-<img src="/images/data-warehouse3.png" />
+<img src="/images/data-warehouse/data-warehouse3.png" />
 
 이미지(위): 데이터 웨어하우스에서 데이터를 연결하고 데이터를 분석한 후 데이터를 공유하여 다른 분석 및 기계 학습 서비스와 함께 활용합니다.
 

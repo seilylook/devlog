@@ -1,7 +1,7 @@
 ---
 title: "Flutter Amplify"
 date: 2024-02-21T14:03:51+09:00
-featuredImage: "/images/aws-amplify.png"
+featuredImage: "/images/aws-amplify-logo-featured-image.png"
 tags: ["Development", "Cross Platform", "Flutter", "Dart", "AWS", "Amplify"]
 categories: ["Project", "Study"]
 draft: true
@@ -73,7 +73,7 @@ Complete the user creation using the AWS console
 
 이어서, IAM 계정에 `액세스 키`를 생성해준다.
 
-<img src="/images/flutter-amplify-1.png">
+<img src="/images/flutter-amplify/flutter-amplify-1.png">
 
 생성한 액세스 키 Id, 액세스 키를 입력해준다.
 
@@ -111,7 +111,7 @@ amplify init
 
 프로젝트 특성에 맞게 적절히 입력해준다.
 
-<img src='/images/flutter-amplify-2.png' />
+<img src='/images/flutter-amplify/flutter-amplify-2.png' />
 
 초기화가 성공했다면 다음의 결과 화면이 보인다.
 
@@ -141,9 +141,9 @@ amplify push
 
 올바로 서비스가 추가되었다면 다음과 같다.
 
-<img src="/images/flutter-amplify-3.png" />
+<img src="/images/flutter-amplify/flutter-amplify-3.png" />
 
-<img src="/images/flutter-amplify-4.png" />
+<img src="/images/flutter-amplify/flutter-amplify-4.png" />
 
 ### Flutter에서 Amplify 서비스 연결 확인
 
@@ -215,4 +215,4 @@ class _MyAppState extends State<MyApp> {
 
 테스트 성공했다면 다음이 디버그 콘솔에 나타난다.
 
-<img src="/images/flutter-amplify-5.png" />
+<img src="/images/flutter-amplify/flutter-amplify-5.png" />

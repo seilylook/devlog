@@ -1,7 +1,7 @@
 ---
 title: "Tunefun Riverpod"
 date: 2024-03-09T16:55:50+09:00
-featuredImage: "/images/project-image.jpeg"
+featuredImage: "/images/project-featured-image.jpeg"
 tags: ["Development", "Cross Platform", "Flutter", "Dart", "Riverpod"]
 categories: ["Project", "Study"]
 draft: true

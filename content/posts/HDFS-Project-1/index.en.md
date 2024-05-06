@@ -1,7 +1,7 @@
 ---
 title: "HDFS Project 1"
 date: 2024-04-28T15:57:39+09:00
-featuredImage: "/images/project-image.jpeg"
+featuredImage: "/images/project-featured-image.jpeg"
 tags: ["Apache Hadoop", "Big Data"]
 categories: ["Computer", "Technology"]
 draft: true
