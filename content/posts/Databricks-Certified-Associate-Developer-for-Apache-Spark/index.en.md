@@ -1,7 +1,7 @@
 ---
 title: "Databricks Certified Associate Developer for Apache Spark"
 date: 2024-05-01T12:44:15+09:00
-featuredImage: "/images/certification-featured-image.png"
+featuredImage: "/images/featured-image/certification.png"
 tags: ["Spark", "Data Engineering"]
 categories: ["Data Engineering"]
 draft: true

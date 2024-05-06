@@ -1,7 +1,7 @@
 ---
 title: "Flutter Calendar Scheduler"
 date: 2023-12-19T11:52:16+09:00
-featuredImage: "/images/scheduler-featured-image.png"
+featuredImage: "/images/featured-image/scheduler.png"
 tags: ["Development", "Cross Platform", "Flutter", "Dart"]
 categories: ["Project"]
 draft: true

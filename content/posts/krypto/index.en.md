@@ -1,7 +1,7 @@
 ---
 title: "Krypto"
 date: 2023-10-18T16:13:56+09:00
-featuredImage: "/images/ethereum-featured-image.jpeg"
+featuredImage: "/images/featured-image/ethereum.jpeg"
 tags: ["Development", "Project", "Front-end", "Smart Contract", "Blockchain"]
 categories: ["Project"]
 draft: true

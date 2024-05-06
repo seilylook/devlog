@@ -1,7 +1,7 @@
 ---
 title: "Kafka Spark"
 date: 2024-04-11T15:58:05+09:00
-featuredImage: "/images/spark-kafka-featured-image.webp"
+featuredImage: "/images/featured-image/spark-kafka.webp"
 tags: ["Spark", "Kafka", "Data Engineering"]
 categories: ["Data Engineering"]
 draft: true

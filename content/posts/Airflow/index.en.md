@@ -1,7 +1,7 @@
 ---
 title: "Airflow"
 date: 2024-04-13T15:51:18+09:00
-featuredImage: "/images/airflow/airflow.png"
+featuredImage: "/images/featured-image/airflow-logo.png"
 tags: ["Orchestration", "Data Pipeline", "Data Engineering"]
 categories: ["Data Engineering"]
 draft: true

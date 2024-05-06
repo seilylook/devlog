@@ -1,7 +1,7 @@
 ---
 title: "Calendar Scheduler Deploy"
 date: 2023-12-27T15:45:26+09:00
-featuredImage: "/images/deploy-featured-image.png"
+featuredImage: "/images/featured-image/deploy.png"
 tags: ["Development", "Cross Platform", "Flutter", "Dart"]
 categories: ["Project"]
 draft: true

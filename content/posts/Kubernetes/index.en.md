@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes"
 date: 2024-05-06T10:58:44+09:00
-featuredImage: "/images/kubernetes/kubernetes.png"
+featuredImage: "/images/featured-image//kubernetes-logo.png"
 tags: ["Kubernetes"]
 categories: ["Development"]
 draft: true

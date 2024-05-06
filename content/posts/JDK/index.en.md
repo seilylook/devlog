@@ -1,7 +1,7 @@
 ---
 title: "JDK Version Change"
 date: 2024-04-30T12:28:24+09:00
-featuredImage: "/images/java-logo-featured-image.png"
+featuredImage: "/images/featured-image/java-logo.png"
 tags: ["Java", "JDK", "Java Virtual Machine"]
 categories: ["Language"]
 draft: true

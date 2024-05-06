@@ -1,7 +1,7 @@
 ---
 title: "ETL"
 date: 2024-04-11T16:15:34+09:00
-featuredImage: "/images/ETL-featured-image.jpeg"
+featuredImage: "/images/featured-image/ETL.jpeg"
 tags: ["ELT", "ETL", "Data Engineering"]
 categories: ["Data Engineering"]
 draft: true

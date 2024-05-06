@@ -1,7 +1,7 @@
 ---
 title: "Blockchain"
 date: 2023-09-22T18:40:05+09:00
-featuredImage: "/images/blockchain.jpg"
+featuredImage: "/images/featured-image/blockchain.jpg"
 tags:
   [
     "Development",

@@ -1,7 +1,7 @@
 ---
 title: "Authentication Svelte Rust"
 date: 2023-09-08T14:26:14+09:00
-featuredImage: "/images/user-auth-featured-image.jpg"
+featuredImage: "/images/featured-image/user-auth.jpg"
 tags: ["Development", "Project", "Front-end", "Back-end"]
 categories: ["Project"]
 draft: true

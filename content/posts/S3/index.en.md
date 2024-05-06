@@ -1,7 +1,7 @@
 ---
 title: "S3"
 date: 2024-04-25T17:34:25+09:00
-featuredImage: "/images/s3-logo-featured-image.png"
+featuredImage: "/images/featured-image/s3-logo.png"
 tags: ["Data Storage", "Big Data"]
 categories: ["Computer", "Technology"]
 draft: true

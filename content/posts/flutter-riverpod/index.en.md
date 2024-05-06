@@ -1,7 +1,7 @@
 ---
 title: "Flutter Riverpod"
 date: 2024-01-17T11:26:36+09:00
-featuredImage: "/images/riverpod-logo-featured-image.png"
+featuredImage: "/images/featured-image/riverpod-logo.png"
 tags: ["Development", "Cross Platform", "Flutter", "Dart", "Riverpod"]
 categories: ["Project", "Study"]
 draft: true

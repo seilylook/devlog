@@ -1,7 +1,7 @@
 ---
 title: "Ubiquitous Language"
 date: 2024-03-15T15:03:37+09:00
-featuredImage: "/images/ubiquitous-featured-image.png"
+featuredImage: "/images/featured-image/ubiquitous.png"
 tags: ["MSA", "Architecture", "Design", "DDD"]
 categories: ["Study"]
 draft: true

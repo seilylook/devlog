@@ -1,7 +1,7 @@
 ---
 title: "MLOps"
 date: 2024-04-11T13:48:36+09:00
-featuredImage: "/images/mlops-featured-image.png"
+featuredImage: "/images/featured-image/mlops.png"
 tags: ["Machine Learning", "Ops"]
 categories: ["Development", "Machine Learning"]
 draft: true

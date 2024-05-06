@@ -1,7 +1,7 @@
 ---
 title: "Data Acquisition Advance"
 date: 2024-04-18T13:47:30+09:00
-featuredImage: "/images/project-image.jpeg"
+featuredImage: "/images/featured-image/project.jpeg"
 tags: ["Data Engineering", "Crawling", "Scraping", "Selenium"]
 categories: ["Data Engineering"]
 draft: true

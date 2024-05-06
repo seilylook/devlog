@@ -1,7 +1,7 @@
 ---
 title: "Domain Driven Design"
 date: 2024-03-14T14:04:50+09:00
-featuredImage: "/images/domain-featured-image.webp"
+featuredImage: "/images/featured-image/domain.webp"
 tags: ["Development", "Architecture", "Design", "DDD"]
 categories: ["Study"]
 draft: true

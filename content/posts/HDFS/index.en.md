@@ -1,7 +1,7 @@
 ---
 title: "HDFS"
 date: 2024-04-20T07:46:46+09:00
-featuredImage: "/images/hdfs-logo-featured-image.jpeg"
+featuredImage: "/images/featured-image/hdfs-logo.jpeg"
 tags: ["Apache Hadoop", "Big Data"]
 categories: ["Computer", "Technology"]
 draft: true

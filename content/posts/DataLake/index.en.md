@@ -1,7 +1,7 @@
 ---
 title: "DataLake"
 date: 2024-04-11T16:59:27+09:00
-featuredImage: "/images/data-lake-featured-image.png"
+featuredImage: "/images/featured-image/data-lake.png"
 tags: ["Data Lake", "Data Engineering"]
 categories: ["Data Engineering"]
 draft: true

@@ -1,7 +1,7 @@
 ---
 title: "GPU"
 date: 2024-04-11T13:20:06+09:00
-featuredImage: "/images/gpu-featured-image.png"
+featuredImage: "/images/featured-image/gpu.png"
 tags: ["GPU", "Hardware"]
 categories: ["Computer", "Technology"]
 draft: true

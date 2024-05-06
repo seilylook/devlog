@@ -1,7 +1,7 @@
 ---
 title: "Spark"
 date: 2024-04-11T14:51:35+09:00
-featuredImage: "/images/spark-logo-featured-image.png"
+featuredImage: "/images/featured-image/spark-logo.png"
 tags: ["Spark", "Data Engineering"]
 categories: ["Data Engineering"]
 draft: true

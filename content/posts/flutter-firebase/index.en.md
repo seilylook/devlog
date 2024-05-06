@@ -1,7 +1,7 @@
 ---
 title: "Flutter Firebase"
 date: 2023-12-26T13:18:15+09:00
-featuredImage: "/images/flutter-firebase-featured-image.jpeg"
+featuredImage: "/images/featured-image/flutter-firebase.jpeg"
 tags: ["Development", "Cross Platform", "Flutter", "Dart"]
 categories: ["Project"]
 draft: true

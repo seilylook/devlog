@@ -1,7 +1,7 @@
 ---
 title: "ELT PostgreSQL"
 date: 2024-04-12T13:01:33+09:00
-featuredImage: "/images/project-featured-image.jpeg"
+featuredImage: "/images/featured-image/project.jpeg"
 tags: ["ELT", "PostgreSQL", "Data Engineering"]
 categories: ["Data Engineering"]
 draft: true

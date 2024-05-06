@@ -1,7 +1,7 @@
 ---
 title: "Patrol"
 date: 2024-03-11T15:21:30+09:00
-featuredImage: "/images/patrol-logo-featured-image.png"
+featuredImage: "/images/featured-image/patrol-logo.png"
 tags:
   [
     "Development",

@@ -1,7 +1,7 @@
 ---
 title: "Data-Acquisition-Begin"
 date: 2024-04-17T13:47:18+09:00
-featuredImage: "/images/project-image.jpeg"
+featuredImage: "/images/featured-image/project.jpeg"
 tags: ["Data Engineering", "Crawling", "Scraping", "Selenium"]
 categories: ["Data Engineering"]
 draft: true

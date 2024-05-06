@@ -1,7 +1,7 @@
 ---
 title: "Rust"
 date: 2023-08-24T14:14:21+09:00
-featuredImage: "/images/rust-logo-featured-image.svg"
+featuredImage: "/images/featured-image/rust-logo.svg"
 tags: ["Development", "Language", "Web3.0", "Blockchain", "Server", "Back-end"]
 categories: ["Language"]
 draft: true

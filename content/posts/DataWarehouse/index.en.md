@@ -1,7 +1,7 @@
 ---
 title: "DataWarehouse"
 date: 2024-04-11T16:39:24+09:00
-featuredImage: "/images/data-warehouse-featured-image.webp"
+featuredImage: "/images/featured-image/data-warehouse.webp"
 tags: ["Data Warehouse", "Data Engineering"]
 categories: ["Data Engineering"]
 draft: true
