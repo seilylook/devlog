@@ -106,7 +106,7 @@ languageName = "English"
   # website description for RSS, SEO, Open Graph and Twitter Cards
   description = "This is my cool site"
   # website images for Open Graph and Twitter Cards
-  images = ["/images/profile.png"]
+  images = ["/images/featured-image/profile.png"]
 
   # Header config
   [params.header]
@@ -231,7 +231,7 @@ languageName = "English"
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-      avatarURL = "/images/profile.png"
+      avatarURL = "/images/featured-image/profile.png"
       # title shown in home page (HTML format is supported)
       title = "Se Hyeon Kim"
       # subtitle shown in home page (HTML format is supported)
@@ -552,11 +552,11 @@ languageName = "English"
     # 页面 SEO 配置
     [params.page.seo]
       # image URL
-      images = ["/images/profile.png"]
+      images = ["/images/featured-image/profile.png"]
       # Publisher info
       [params.page.seo.publisher]
         name = "seilylook"
-        logoUrl = "/images/profile.png"
+        logoUrl = "/images/featured-image/profile.png"
 
   # TypeIt config
   # TypeIt 配置
@@ -587,10 +587,10 @@ languageName = "English"
   [params.seo]
     # image URL
     # 图片 URL
-    image = "/images/profile.png"
+    image = "/images/featured-image/profile.png"
     # thumbnail URL
     # 缩略图 URL
-    thumbnailUrl = "/images/profile.png"
+    thumbnailUrl = "/images/featured-image/profile.png"
 
   # Analytics config
   [params.analytics]
