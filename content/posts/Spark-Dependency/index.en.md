@@ -1,7 +1,7 @@
 ---
 title: "Spark Dependency"
 date: 2024-05-14T17:38:35+09:00
-featuredImage: "/images/featured-image/architecture.jpeg"
+featuredImage: "/images/featured-image/knowledge.jpeg"
 tags: ["Spark", "Architecture"]
 categories: ["Data Engineering"]
 draft: true
