@@ -1,5 +1,5 @@
 ---
-title: "Spark DPP"
+title: "Spark DPP(Dynamic Partition Pruning)"
 date: 2024-05-14T10:52:10+09:00
 featuredImage: "/images/featured-image/knowledge.jpeg"
 tags: ["Spark", "Dynamic Partition Pruning"]
@@ -109,5 +109,7 @@ So here’s what we are actually going to do. We are intercepting the results of
 To summarize, in Apache sparks 3.0, a new optimization called dynamic partition pruning is implemented that works both at:
 
 Logical planning level to find the dimensional filter and propagated across the join to the other side of the scan.
+
 Physical level to wire it together in a way that this filter executes only once on the dimension side.
+
 Then the results of the filter gets into reusing directly in the scan of the table. And with this two fold approach we can achieve significant speed ups in many queries in Spark.
