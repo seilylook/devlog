@@ -1,5 +1,5 @@
 ---
-title: "Kubernetes Commands"
+title: "Kubernetes Core Concepts"
 date: 2024-06-11T12:51:49+09:00
 featuredImage: "/images/featured-image/knowledge.jpeg"
 tags: ["Kubernetes"]
@@ -1586,7 +1586,7 @@ NAME        READY   STATUS              RESTARTS   AGE
 nginx-pod   0/1     ContainerCreating   0          7s
 ```
 
-## Q. Deploy a redis pod using the redis:alpine image with the labels set to tier=db. Either use imperative commands to create the pod with the labels. Or else use imperative commands to generate the pod definition file, then add the labels before creating the pod using the file.
+### Q. Deploy a redis pod using the redis:alpine image with the labels set to tier=db. Either use imperative commands to create the pod with the labels. Or else use imperative commands to generate the pod definition file, then add the labels before creating the pod using the file.
 
 Solution 1. 
 
@@ -1622,7 +1622,7 @@ Solution 2.
 kubectl run redis -l tier=db --image=redis:alpine
 ```
 
-## Q. Create a service redis-service to expose the redis application within the cluster on port 6379.
+### Q. Create a service redis-service to expose the redis application within the cluster on port 6379.
 
 ```bash
 controlplane ~ ➜  kubectl expose pod redis --port=6379 --name redis-service
@@ -1638,7 +1638,7 @@ service/kubernetes      ClusterIP   10.43.0.1       <none>        443/TCP    32m
 service/redis-service   ClusterIP   10.43.163.218   <none>        6379/TCP   18s
 ```
 
-## Q. Create a deployment named webapp using the image kodekloud/webapp-color with 3 replicas. Try to use imperative commands only. Do not create definition files.
+### Q. Create a deployment named webapp using the image kodekloud/webapp-color with 3 replicas. Try to use imperative commands only. Do not create definition files.
 
 ```bash
 controlplane ~ ✖ kubectl create deployment webapp --image=kodekloud/web
@@ -1650,7 +1650,7 @@ NAME     READY   UP-TO-DATE   AVAILABLE   AGE
 webapp   3/3     3            3           46s
 ```
 
-## Q. Create a new pod called custom-nginx using the nginx image and run it on container port 8080.
+### Q. Create a new pod called custom-nginx using the nginx image and run it on container port 8080.
 
 ```bash
 controlplane ~ ➜  kubectl run custom-nginx --image=nginx --port=8080
@@ -1666,7 +1666,7 @@ webapp-799f6b587f-88tbr   1/1     Running   0          3m44s
 custom-nginx              1/1     Running   0          32s
 ```
 
-## Q. Create a new namespace called dev-ns. Use imperative commands.
+### Q. Create a new namespace called dev-ns. Use imperative commands.
 
 ```bash
 controlplane ~ ➜  kubectl create namespace dev-ns
@@ -1681,14 +1681,14 @@ default           Active   42m
 dev-ns            Active   13s
 ```
 
-## Q. Create a new deployment called redis-deploy in the dev-ns namespace with the redis image. It should have 2 replicas. Use imperative commands.
+### Q. Create a new deployment called redis-deploy in the dev-ns namespace with the redis image. It should have 2 replicas. Use imperative commands.
 
 ```bash
 controlplane ~ ➜  kubectl create deployment redis-deploy --image=redis --replicas=2 -n dev-ns
 deployment.apps/redis-deploy created
 ```
 
-## Q. Create a pod called httpd using the image httpd:alpine in the default namespace. Next, create a service of type ClusterIP by the same name (httpd). The target port for the service should be 80. Try to do this with as few steps as possible.
+### Q. Create a pod called httpd using the image httpd:alpine in the default namespace. Next, create a service of type ClusterIP by the same name (httpd). The target port for the service should be 80. Try to do this with as few steps as possible.
 
 ```bash
 controlplane ~ ➜  kubectl run httpd --image=httpd:apline --port=80 --expose
@@ -1696,7 +1696,7 @@ service/httpd created
 pod/httpd created
 ```
 
-## Q. Create a pod called httpd using the image httpd:alpine in the default namespace. Next, create a service of type ClusterIP by the same name (httpd). The target port for the service should be 80. Try to do this with as few steps as possible.
+### Q. Create a pod called httpd using the image httpd:alpine in the default namespace. Next, create a service of type ClusterIP by the same name (httpd). The target port for the service should be 80. Try to do this with as few steps as possible.
 
 ```bash
 controlplane ~ ➜  kubectl run httpd --image=httpd:alpine --port=80 --expose
