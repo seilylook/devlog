@@ -2,8 +2,8 @@
 title: "Mathematics Standard Deviation"
 date: 2024-06-27T14:58:03+09:00
 featuredImage: "/images/featured-image/mathematics.webp"
-tags: ["Kubernetes"]
-categories: ["Development"]
+tags: ["Standard Deviation"]
+categories: ["Mathematics"]
 draft: true
 ---
 
