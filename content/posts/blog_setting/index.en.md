@@ -1,3 +1,70 @@
++++
+title = 'Blog Setting'
+date = 2024-07-20T15:48:44+09:00
+featuredImage = "/images/featured-image/hugo-logo.png"
+tags = ["Development", "vlog"]
+categories = ["Project"]
+draft = true
++++
+
+`Hogo`: The worlds's fastest framework for building static website.
+
+# Hugo
+
+> https://gohugo.io/
+
+## hugo 설치
+
+```shell
+# Install brew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# download hugo
+brew install hugo
+
+```
+
+## 프로젝트 생성
+
+```shell
+# 프로젝트 생성 디렉터리 접근
+cd development
+
+hugo new site <원하는 파일 이름>
+
+# 나의 경우
+hugo new site devlog
+```
+
+{{<admonition note 주의>}}
+hugo version upgrade인지 대부분의 사이트에서 말하는 것과 다르게 사이트를 hugo new site를 통해 프로젝트를 생성하면 config.toml이 생성되는 것이 아니라 hugo.toml이 생성된다. 두개 다 같으니 걱정할 필요 없다.
+{{</admonition>}}
+
+## Repository 생성
+
+두개의 repo를 생성해야 한다.
+
+1. hugo 사용해 블로그 안의 내용과 소스 코드를 저장하기 위한 repo
+2. gibhub page를 사용해 호스팅 해줄 repo
+
+## 테마 적용
+
+```shell
+# 생성한 프로젝트로 이동
+cd devlog
+
+# 원하는 테마 적용
+git submodule add <SOME THEME>
+
+git submodule add https://github.com/dillonzq/LoveIt themes/loveit
+
+```
+
+### submodule 로 가져온 theme의 config.toml을 참고해서 hugo.toml을 수정
+
+{{<admonition note hugo.toml 수정>}}
+
+```
 baseURL = "https://seilylook.github.io/"
 defaultContentLanguage = "en"
 # Change the default theme to be use when building the site with Hugo
@@ -39,7 +106,7 @@ languageName = "English"
   # website description for RSS, SEO, Open Graph and Twitter Cards
   description = "This is my cool site"
   # website images for Open Graph and Twitter Cards
-  images = ["/images/profile/profile.png"]
+  images = ["/images/featured-image/profile.png"]
 
   # Header config
   [params.header]
@@ -164,7 +231,7 @@ languageName = "English"
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-      avatarURL = "/images/profile/profile.png"
+      avatarURL = "/images/featured-image/profile.png"
       # title shown in home page (HTML format is supported)
       title = "Se Hyeon Kim"
       # subtitle shown in home page (HTML format is supported)
@@ -184,7 +251,7 @@ languageName = "English"
   # 主页的社交信息设置
   [params.social]
     GitHub = "seilylook"
-    Linkedin = "se-hyeon-kim-07a1a02a2/"
+    Linkedin = ""
     Twitter = ""
     Instagram = "seilylook"
     Facebook = ""
@@ -485,11 +552,11 @@ languageName = "English"
     # 页面 SEO 配置
     [params.page.seo]
       # image URL
-      images = ["/images/profile/profile.png"]
+      images = ["/images/featured-image/profile.png"]
       # Publisher info
       [params.page.seo.publisher]
         name = "seilylook"
-        logoUrl = "/images/profile/profile.png"
+        logoUrl = "/images/featured-image/profile.png"
 
   # TypeIt config
   # TypeIt 配置
@@ -520,10 +587,10 @@ languageName = "English"
   [params.seo]
     # image URL
     # 图片 URL
-    image = "/images/profile/profile.png"
+    image = "/images/featured-image/profile.png"
     # thumbnail URL
     # 缩略图 URL
-    thumbnailUrl = "/images/profile/profile.png"
+    thumbnailUrl = "/images/featured-image/profile.png"
 
   # Analytics config
   [params.analytics]
@@ -587,14 +654,6 @@ languageName = "English"
 [menu]
   [[menu.main]]
     weight = 1
-    identifier = "about"
-    pre = ""
-    post = ""
-    name = "About"
-    url = "/about/"
-    title = ""
-  [[menu.main]]
-    weight = 2
     identifier = "posts"
     # you can add extra information before the name (HTML format is supported), such as icons
     pre = ""
@@ -605,7 +664,7 @@ languageName = "English"
     # title will be shown when you hover on this menu link
     title = ""
   [[menu.main]]
-    weight = 3
+    weight = 2
     identifier = "tags"
     pre = ""
     post = ""
@@ -613,7 +672,7 @@ languageName = "English"
     url = "/tags/"
     title = ""
   [[menu.main]]
-    weight = 4
+    weight = 3
     identifier = "categories"
     pre = ""
     post = ""
@@ -676,3 +735,153 @@ languageName = "English"
     languageName = "Korean"
     weight = 2
     languageCode = "ko"
+
+```
+
+{{</admonition>}}
+
+## 게시물 작성
+
+```shell
+hugo new posts/first-post/index.en.md
+
+```
+
+자동으로 이런 frontmatter가 생성된다.
+
+```
+---
+title: "Hugo 개발 블로그 개설"
+date: 2023-08-22T17:04:46+09:00
+---
+```
+
+## git push
+
+1. hugo 소스 코드 올리기
+
+```shell
+git init
+git add .
+git commit -m "init commit"
+git branch -M main
+git remote add origin <본인이 만든 repo 주소>
+
+# 나의 경우
+git remote add origin https://github.com/seilylook/devlog.git
+
+```
+
+2. github.io에 올리기
+
+```shell
+git submodule add <git 아이디.github.io 주소>
+
+# 나의 경우
+git submodule add https://github.com/seilylook/seilylook.github.io.git public
+```
+
+## 테스트 해보기
+
+```shell
+hugo server -D
+```
+
+내가 적용한 테마와 포스트를 확인할 수 있다.
+
+### public에 데이터 올리기
+
+```shell
+hugo -t <테마이름>
+
+# 나의 경우
+hugo -t LoveIt
+```
+
+## 결과물 업로드
+
+- [x] username.github.io에 업로드
+
+```shell
+cd public
+git add .
+git commit -m "init commit"
+git push -u origin main
+```
+
+- [x] 프로젝트에 업로드
+
+```shell
+cd ..
+git add .
+git commit -m "init commit"
+git push -u origin main
+```
+
+## shell script를 사용해 자동 업로드
+
+프로젝트 루트 디렉터리에 .sh 파일을 생성한다.
+
+나의 경우 deploy.sh
+
+```shell
+#!/bin/sh
+
+# If a command fails then the deploy stops
+set -e
+printf "\033[0;32m I Love seilylook \033[0m\n"
+printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
+
+printf "\033[0;32mBuild the project.\033[0m\n"
+hugo -D
+# hugo -t timeline # if using a theme, replace with `hugo -t <YOURTHEME>`
+
+
+printf "\033[0;32m  Go To Public folder \033[0m\n"
+cd public
+
+
+printf "\033[0;32m  Setting for submodule commit \033[0m\n"
+git config --local user.name "seilylook"
+git config --local user.email "seilylook@naver.com"
+git submodule update --init --recursive
+
+
+printf "\033[0;32m  Add changes to git. \033[0m\n"
+git add .
+
+printf "\033[0;32m  Commit changes.. \033[0m\n"
+msg="rebuilding site $(date)"
+if [ -n "$*" ]; then
+	msg="$*"
+fi
+git commit -m "$msg"
+
+printf "\033[0;32m  Push blog(presentation) source and build repos. \033[0m\n"
+git push origin main
+
+
+printf "\033[0;32m  Come Back up to the Project Root \033[0m\n"
+cd ..
+echo $pwd
+
+printf "\033[0;32m  root repository Commit & Push. \033[0m\n"
+git add .
+
+msg="rebuilding site `date`"
+if [ $# -eq 1 ]
+  then msg="$1"
+fi
+
+git commit -m "$msg"
+
+git push origin main
+
+```
+
+다음부터는 명령어를 통해 배포할 수 있다.
+
+```shell
+$ sh deploy.sh <COMMIT_MSG>
+
+```
