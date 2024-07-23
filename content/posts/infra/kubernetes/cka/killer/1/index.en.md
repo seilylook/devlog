@@ -1,6 +1,6 @@
 +++
-title = 'Certified Kubernetes Administrator'
-date = 2024-07-23T10:18:54+09:00
+title = 'Killer 1'
+date = 2024-07-23T17:48:08+09:00
 featuredImage = "/images/feature_images/kubernetes.png"
 tags = ["Infrastructure"]
 categories = ["Kubernetes"]
