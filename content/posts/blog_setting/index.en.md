@@ -1,7 +1,7 @@
 +++
 title = 'Blog Setting'
 date = 2024-07-20T15:48:44+09:00
-featuredImage = "/images/featured-image/hugo-logo.png"
+featuredImage = "/images/feature_images/hugo.png"
 tags = ["Development", "vlog"]
 categories = ["Project"]
 draft = true
