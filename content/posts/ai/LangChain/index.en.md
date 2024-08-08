@@ -1,5 +1,5 @@
 +++
-title = 'Lang_chain'
+title = 'Langchain'
 date = 2024-08-02T11:44:04+09:00
 featuredImage = "/images/ai/lang_chain/main.webp"
 tags = ["LangChain", "Upstarge AI Lab"]
