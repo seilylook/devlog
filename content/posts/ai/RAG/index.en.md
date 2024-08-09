@@ -45,31 +45,6 @@ RAG(Retrieval-Augmented Generation)는 대규모 언어 모델의 출력을 최�
 
 출처: https://fastcampus.co.kr
 
-## KNN-LM
+# RAG with LlamaIndex
 
-* 다음 단어 예측에 KNN 모델을 사용
-
-* 드물게 등장하는 패턴을 다룰 때 유용
-
-* decoder-only Transformer
-
-{{<admonition info>}}
-K-최근접 유사 항목(kNN) 정의
-
-kNN(K-최근접 유사 항목 알고리즘)은 근접성을 사용하여 하나의 데이터 요소를 예측을 위해 학습되고 기억된 데이터 세트와 비교하는 머신 러닝 알고리즘입니다. 이 인스턴스 기반 학습은 kNN에 '지연 학습'이라는 명칭을 부여하고 알고리즘이 분류 또는 회귀 문제를 수행할 수 있도록 합니다. kNN은 유사한 지점이 서로 근처에서 발견될 수 있다는, 즉, 같은 종류의 새들이 함께 모인다는 가정을 바탕으로 작동합니다.
-
-분류 알고리즘으로서 kNN은 유사 항목 내의 다수 세트에 새로운 데이터 요소를 할당합니다. 회귀 알고리즘인 kNN은 쿼리 지점에 **가장 가까운 값의 평균**(유클리디안 거리를 바탕으로 측정)을 기반으로 예측을 수행합니다.
-
-kNN은 지도 학습 알고리즘으로, 'k'는 분류 또는 회귀 문제에서 고려되는 최근접 유사 항목의 수를 나타내고, 'NN'은 k에 대해 선택된 수에 대한 최근접 유사 항목을 나타냅니다.
-
-출처: https://www.elastic.co/kr/what-is/knn
-{{</admonition>}}
-
-<img src="/images/ai/rag/3.png" />
-
-<img src="/images/ai/rag/4.png" />
-
-<img src="/images/ai/rag/5.png" />
-
-출처: https://fastcampus.co.kr
-
+[Tutorial](https://github.com/seilylook/LlamdaIndex_with_OpenAI)
