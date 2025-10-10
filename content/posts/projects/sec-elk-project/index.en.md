@@ -187,3 +187,33 @@ xpack.monitoring.elasticsearch.hosts: ["http://elasticsearch:9200"]
 ```
 
 ## 3. Kali에 Filebeat 설치 및 구성(로그 수집자)
+
+### Filebeat 설치 및 구성
+
+```bash
+# 1. GPG 키 다운로드
+curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch -o /tmp/elasticsearch-key.asc
+
+# 2. 키 변환 및 저장
+sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg /tmp/elasticsearch-key.asc
+
+# 3. 임시 파일 삭제
+rm /tmp/elasticsearch-key.asc
+
+# 4. 키 확인
+ls -l /usr/share/keyrings/elasticsearch-keyring.gpg
+
+# 5. Elastic 저장소 추가
+echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-8.x.list
+
+# 6. 패키지 목록 업데이트
+sudo apt update
+
+# 4. Filebeat 설치
+sudo apt install filebeat -y
+
+# 5. 설치 확인
+filebeat version
+```
+
+### System 모듈 활성화
